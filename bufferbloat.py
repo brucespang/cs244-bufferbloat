@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"CS244 Spring 2015 Assignment 1: Bufferbloat"
+"CS244 Spring 2021 Assignment 1: Bufferbloat on Mininet"
 
 from mininet.topo import Topo
 from mininet.node import CPULimitedHost

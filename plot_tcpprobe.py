@@ -42,9 +42,9 @@ source code: http://lxr.free-electrons.com/source/net/ipv4/tcp_probe.c?v=3.12
 """
 def parse_file(f):
     num_fields = 10
-    linux_ver = os.uname()[2].split('.')[:2] # example '3.13.0-24-generic' 
+    linux_ver = os.uname()[2].split('.')[:2] # example '3.13.0-24-generic'
     ver_1, ver_2 = [int(ver_i) for ver_i in linux_ver]
-    if ver_1 == 3 and ver_2 >= 12:
+    if (ver_1 == 3 and ver_2 >= 12) or (ver_1 > 3):
         num_fields = 11
 
     times = defaultdict(list)
